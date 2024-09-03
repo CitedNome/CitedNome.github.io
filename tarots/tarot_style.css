@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+
+}
+
+.container {
+    padding-top: 50px;
+    background-image: linear-gradient(-45deg, rgb(50, 0, 67), rgb(100, 0, 100), rgb(36, 0, 53));
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.card {
+    color: white;
+    width: 280px;
+    height: 480px;
+    margin: 0 20px;
+    background-color: #fff;
+    border: solid 4.5px rgb(235, 176, 0);
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-image: url("card1.png");
+    background-size: cover;
+    transition: all 1.25s;
+    font-size: 22.5px;
+}
+
+.card:hover {
+    scale: 1.075;
+}
+
+.cards-container:has(.card:hover) .card:not(:hover) {
+    filter: blur(1px);
+}
+
+button {
+    padding: 20px 40px;
+    font-size: 25px;
+    cursor: pointer;
+    border: solid 2px rgb(235, 176, 0);
+    background-image: linear-gradient(45deg, rgb(78, 0, 78), rgb(50, 0, 67), rgb(100, 0, 100), rgb(36, 0, 53));
+    color: #fff;
+    border-radius: 10px;
+    background-size: 400% 400%;
+    animation: 10s buttonBgAn ease infinite forwards;
+    transition: all 1s;
+}
+
+button:hover {
+    box-shadow: 0 10px 20px rgba(88, 0, 105, 0.63);
+}
+
+@keyframes buttonBgAn {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+  }

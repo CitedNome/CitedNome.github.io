@@ -27,10 +27,11 @@ body {
     margin-bottom: 10px;
 }
 .about-card p {
-    margin-top: 5px;
+    margin-top: -5px;
     font-size: 20px;
     line-height: 20px;
     margin-bottom: 5px;
+    padding: 6px;
 }
 
 .about-card button {

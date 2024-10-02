@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 body {
     text-align: center;
     color: #ffffff;
     font-size: 30px;
     background-color: rgb(12, 0, 20);
+    font-family: "Rajdhani", sans-serif;
+    font-style: normal;
 }
 
 #container {
@@ -17,8 +21,9 @@ body {
     height: 250px;
     width: 200px;
     background-color: rgba(255, 255, 255, 0.363);
-    border: solid white 3px;
-    border-radius: 10px;    
+    /* border: solid white 3px; */
+    border-radius: 10px;
+    filter: drop-shadow(5px 5px 5px white);
 }
 
 .about-card h3 {

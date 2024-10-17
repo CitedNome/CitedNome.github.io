@@ -145,35 +145,32 @@ body {
     margin-bottom: 5px;
 }
 
-.card-buttons {
+.card-buttons-div {
     display: flex;
-    flex-direction: row;
-    align-items:stretch;
-    text-align: center;
+    /* flex-direction: row; */
+    justify-content: space-evenly;
 }
 
-.card-buttons button {
+.card-buttons-div button {
     position: relative;
     background-color: var(--base-color);
     border: 2.5px var(--accent-color) solid;
     border-radius: 5px;
 }
 
-.project-card .card-buttons .gh-button {
-    margin: 0 auto;
+.card-buttons-div .gh-button {
     height: 40px;
     width: 40px;
 }
 
-.project-card .card-buttons img {
+.card-buttons-div img {
     margin: 0 auto;
     height: 25px;
     width: 25px;
 }
 
-.project-card .card-buttons .card-button {
+.card-buttons-div .card-button {
     height: 40px;
-    margin: 0 auto;
     font-size: large;
     font-weight: bolder;
     padding-left: 10px;
@@ -185,7 +182,7 @@ body {
     background-color: var(--accent-color);
 }
 
-.project-card .card-buttons .card-button:hover {
+.card-buttons-div .card-button:hover {
     background-color: var(--base-color);
     color: var(--accent-color);
 }

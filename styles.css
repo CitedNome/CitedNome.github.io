@@ -159,8 +159,14 @@ body {
 }
 
 .card-buttons-div .gh-button {
+    transition: all 0.5s ease;
     height: 40px;
     width: 40px;
+}
+
+.card-buttons-div .gh-button:hover {
+    filter: invert();
+    border-color: white;
 }
 
 .card-buttons-div img {
